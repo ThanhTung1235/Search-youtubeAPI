@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>FakeTube</title>
+    <link rel="stylesheet" href="Style.css">
 
 
 </head>
 <body>
-<div>
+<div class="container">
     <input type="text" id="search" style="width: 300px">
-    <input type="submit" value="Tìm kiếm" onclick="btn_search()" >
+    <input type="submit" value="Tìm kiếm" onclick="btn_search()">
 </div>
-<div id="myTubes"></div>
+<div id="myTubes" class="container">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <iframe src="" frameborder="0" class="modal-content" id="frameSrc" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+    </div>
+
+</div>
 <!--select[name="city" id="city"]>option[value="$"]*63-->
 <script src="YoutubeJS.js"></script>
 </body>
