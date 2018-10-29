@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>FakeTube</title>
     <link rel="stylesheet" href="Style.css">
+    <style>
 
+    </style>
 
 </head>
 <body>
@@ -13,14 +15,25 @@
     <input type="submit" value="Tìm kiếm" onclick="btn_search()">
 </div>
 <div id="myTubes" class="container">
+    <div class="tube-item">
+        <!--<img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Hello world" id="myImg" onclick="Hello()" style="width: 100%;max-width: 300px">-->
+    </div>
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
-        <iframe src="" frameborder="0" class="modal-content" id="frameSrc" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+        <iframe width="560" height="500" src="" class="modal-content" id="frameSrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!--<img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="image" class="modal-content" id="img01">-->
     </div>
 
 </div>
 <!--select[name="city" id="city"]>option[value="$"]*63-->
 <script src="YoutubeJS.js"></script>
+<script>
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("frameSrc");
+    function Hello() {
+        modal.style.display = "block";
+        modalImg.src = "https://www.youtube.com/embed//fB8TyLTD7EE/";
+    }
+</script>
 </body>
 </html>
