@@ -36,7 +36,6 @@ function Search_youtube() {
 function DoAction(videoId) {
     modal.style.display = "block";
     modalImg.src = 'https://www.youtube.com/embed/'+videoId;
-    alert("https://www.youtube.com/embed/"+videoId);
 }
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
