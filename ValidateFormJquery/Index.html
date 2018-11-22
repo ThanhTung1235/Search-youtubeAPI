@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-family: Bahnschrift;
+        }
+
+        .form-content{
+            width: 100%;
+            margin: auto;
+            max-width: 1000px;
+        }
+        input, .gender {
+            margin: 10px;
+            width: 300px;
+            padding: 5px;
+            display: inline;
+        }
+        #error-message{
+            color: red;
+        }
+        .error{
+            display: block;
+            color: red;
+            margin-left:10px ;
+        }
+    </style>
+
+</head>
+<body>
+<div class="form-content">
+    <h1>Register Account</h1>
+    <form id="register-form" action="" name="control-form">
+        <div id="error-message"></div>
+        <div>
+            <input type="text" name="firstName" placeholder="First name">
+        </div>
+        <div>
+            <input type="text" name="lastName" placeholder="Last name">
+        </div>
+        <div>
+            <input type="text" name="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="text" name="confirm-password" placeholder="Confirm password">
+        </div>
+        <div>
+            <input type="text" name="address" placeholder="Address">
+        </div>
+        <div>
+            <input type="number" name="phone" placeholder="phone">
+        </div>
+        <div>
+            <input type="text" name="avatar" placeholder="Avatar">
+        </div>
+        <div>
+            <input type="text" name="mail" placeholder="Mail">
+        </div>
+        <div>
+            <input type="date" name="date" placeholder="Date of birth">
+        </div>
+        <div>
+            <select class="gender" name="gender" id="">
+                <option value="1" name="gender">Male</option>
+                <option value="0" name="gender">Female</option>
+                <option value="2" name="gender">Orther</option>
+            </select>
+        </div>
+        <input type="button" name="submit" value="Submit">
+    </form>
+    <script src="Myjs/jquery-3.3.1.min.js"></script>
+    <script src="Myjs/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="Myjs/jquery-validation-1.17.0/dist/additional-methods.min.js"></script>
+    <script src="Myjs/Myjs.js"></script>
+</div>
+</body>
+</html>

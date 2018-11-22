@@ -20,7 +20,7 @@ function Search_youtube() {
             for (var i = 0; i < jsonObj.items.length; i++) {
                 var videoItem = '<div class="tube-item">';
                 // videoItem += '<iframe width="660" height="355" src="https://www.youtube.com/embed/' + jsonObj.items[i].id.videoId + '" frameborder="0"  allow=" encrypted-media" allowfullscreen></iframe>';
-                videoItem += '<img id="myImg" style="width: 100%;max-width: 300px" onclick="DoAction( /' + jsonObj.items[i].id.videoId + '/)" alt="" src="' + jsonObj.items[i].snippet.thumbnails.high.url + '">';
+                videoItem += '<img id="myImg" style="width: 100%;max-width: 300px" onclick="DoAction( \'' + jsonObj.items[i].id.videoId + '\')" alt="" src="' + jsonObj.items[i].snippet.thumbnails.high.url + '">';
                 videoItem += '<h3>' + jsonObj.items[i].snippet.title + '</h3>';
                 videoItem += '</div>';
                 content += videoItem;
